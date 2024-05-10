@@ -9,6 +9,24 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    macros {
+        Double_Quotes: Double_Quotes {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DOUBLE_QUOTES &kp SPACE>, <&macro_press>;
+
+            label = "DOUBLE_QUOTES";
+        };
+
+        Single_Quote: Single_Quote {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SINGLE_QUOTE &kp SPACE>, <&macro_press>;
+
+            label = "SINGLE_QUOTE";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -37,10 +55,10 @@
 
             display-name = "Lower";
             bindings = <
-&kp TAB     &kp SINGLE_QUOTE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DOUBLE_QUOTES    &kp PLUS   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BSPC
-&bt BT_CLR  &bt BT_SEL 0      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp DOLLAR           &kp LEFT   &kp DOWN              &kp UP                 &kp RIGHT         &trans             &trans
-&kp LSHFT   &trans            &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0         &kp MINUS  &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans            &trans             &trans
-                                            &kp LGUI      &trans        &kp SPACE            &kp RET    &trans                &kp LSHIFT
+&kp TAB     &Single_Quote  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &Double_Quotes    &kp PLUS   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BSPC
+&bt BT_CLR  &bt BT_SEL 0   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp DOLLAR        &kp LEFT   &kp DOWN              &kp UP                 &kp RIGHT         &trans             &trans
+&kp LSHFT   &trans         &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0      &kp MINUS  &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans            &trans             &trans
+                                         &kp LGUI      &trans        &kp SPACE         &kp RET    &trans                &kp LSHIFT
             >;
         };
 
