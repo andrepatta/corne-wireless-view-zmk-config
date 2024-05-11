@@ -30,6 +30,23 @@
 
             label = "SINGLE_QUOTE";
         };
+
+        macro_alt_tab_app: macro_alt_tab_app {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LCMD &kp GRAVE>, <&macro_press>;
+
+            label = "MACRO_ALT_TAB_APP";
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        alt_tab_app {
+            bindings = <&macro_alt_tab_app>;
+            key-positions = <12 36>;
+        };
     };
 
     keymap {
