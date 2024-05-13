@@ -71,7 +71,7 @@
             display-name = "Lower";
             bindings = <
 &trans      &trans        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans          &Double_Quotes  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DELETE
-&bt BT_CLR  &bt BT_SEL 0  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp DOLLAR      &kp LEFT        &kp DOWN          &kp UP             &kp RIGHT             &trans                 &kp HOME
+&bt BT_CLR  &bt BT_SEL 0  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp DOLLAR      &kp LEFT        &kp DOWN          &kp UP             &kp RIGHT             &kp APOSTROPHE         &kp HOME
 &trans      &trans        &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0    &Single_Quote   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans                &trans                 &kp END
                                         &kp LGUI      &trans        &kp SPACE       &trans          &trans            &trans
             >;
